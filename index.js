@@ -99,7 +99,7 @@ app.post('/webhook', line.middleware(lineConfig), async (req, res) => {
         });
       } catch (err) {
         console.error('發生錯誤：', err.message);
-        console.error('詳細錯誤：', err.response?.data);
+        console.error('詳細錯誤：', JSON.stringify(err.response?.data));
       }
     }
   }
