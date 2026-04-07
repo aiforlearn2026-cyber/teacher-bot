@@ -47,7 +47,7 @@ async function askGemini(userId, userMessage) {
 
   // 呼叫 Gemini API
   const response = await axios.post(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${process.env.GEMINI_API_KEY}`,
+    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${process.env.GEMINI_API_KEY}`,
     {
       // System Prompt：設定 AI 的角色與語言
       // 可以自行修改這段文字，讓 AI 扮演不同角色
